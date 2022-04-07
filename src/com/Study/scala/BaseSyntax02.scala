@@ -1,6 +1,6 @@
 package com.Study.scala
 
-object BaseSyntax {
+object BaseSyntax02 {
   def main(args: Array[String]): Unit = {
     /*
     * for循环
