@@ -6,19 +6,19 @@ object BaseSyntax {
     * for循环
     * */
 
-    /*
+
     val f = 1 to 10 //to:首尾包含  也可写成1.to(10)
-      println(f) -------Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+      println(f)    //-------Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     val f2 = 1.to(10,2)
-    println(f2)   ------Range(1, 3, 5, 7, 9)
+    println(f2)   //------Range(1, 3, 5, 7, 9)
     val f1 = 1 until 10 //until 首包含，尾不包含
-      println(f1)    ------- Range(1, 2, 3, 4, 5, 6, 7, 8, 9)
+      println(f1)    //------- Range(1, 2, 3, 4, 5, 6, 7, 8, 9)
     for (i <- 1 to 10)
-      println(i)
-      */
+      print(i)    //输出1到10所有数字
+
 
     //例子： 打印小九九
-    /*  写法一，特点将两个for循环合并为一个
+    /*  写法一，特点将两个for循环合并为一个*/
     for (i <- 1 until 10; j <- 1 until 10) {
       if (i >= j) {
         print(s"${i} * ${j} = ${i * j}\t")
@@ -27,9 +27,9 @@ object BaseSyntax {
       if (i == j) {
         println()
       }
-    }*/
+    }
 
-    /* 写法二
+    /* 写法二*/
     for (i <- 1 until 10) {
       for (j <- 1 until 10) {
         if (i >= j) {
@@ -39,14 +39,14 @@ object BaseSyntax {
           println()
         }
       }
-    }*/
+    }
 
     //将for中的符合条件的元素通过yield关键字返回成一个集合
-    /*
+    /**/
     val list = for (i <- 1 to 10; if (i > 5)) yield i
     for (w <- list) {
       println(w)
-    }*/
+    }
 
     /**
      * while 循环
@@ -67,7 +67,6 @@ object BaseSyntax {
      * if else
      */
 
-    /*
      val age =18
      if (age < 18 ){
        println("no allow")
@@ -76,7 +75,6 @@ object BaseSyntax {
      }else{
        println("allow self")
      }
-     */
 
 
   }
