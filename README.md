@@ -1,2 +1,2 @@
 # ScalaStudy
-简易的Scala教程
+简易的Scala的学习笔记
